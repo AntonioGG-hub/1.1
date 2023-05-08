@@ -115,7 +115,81 @@ public class Home extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				String opcion= (String) cbConversores.getSelectedItem();
 				if(opcion=="Conversor de unidades") {
-					
+					List<List<String>> lstOpciones= new ArrayList<>();
+					String[] valores = new String[10];
+					int indiceValores=0;
+					lstOpciones.add(new ArrayList<String>(Arrays.asList("M","KM","Metro", "Kilometro", "1000")));
+					lstOpciones.add(new ArrayList<String>(Arrays.asList("M","MILLA","Metro", "Milla", "1609.34")));
+					lstOpciones.add(new ArrayList<String>(Arrays.asList("M","CM","Metro", "Centímetro", "0.01")));
+					lstOpciones.add(new ArrayList<String>(Arrays.asList("M","MM","Metro", "Milímetro", "0.001")));
+					lstOpciones.add(new ArrayList<String>(Arrays.asList("M","DM","Metro", "Decametro", "0.1")));
+					for (int i = 0; i < lstOpciones.size(); i++) {
+						valores[indiceValores] = "De "+lstOpciones.get(i).get(2)+" a "+lstOpciones.get(i).get(3);
+						indiceValores++;
+						valores[indiceValores] = "De "+lstOpciones.get(i).get(3)+" a "+lstOpciones.get(i).get(2);
+						indiceValores++;
+					}
+					Object opcionMoneda = JOptionPane.showInputDialog(
+							null,
+							"Seleccione una opción de conversión:",
+							"Conversor de unidades",
+							JOptionPane.PLAIN_MESSAGE,
+							null,
+							valores,
+							valores[0]);
+					if(opcionMoneda != null) {
+						Object input = JOptionPane.showInputDialog(
+								null,
+								"Ingrese el valor que deseas convertir: ",
+								"Conversor de unidades",
+								JOptionPane.QUESTION_MESSAGE,
+								null,
+								null,
+								null);
+						if(input != null) {
+							try {
+								String opcionConversion = (String) opcionMoneda, opInicial,opFinal;
+								Pattern pattern = Pattern.compile("^\\d+(\\.\\d+)?$");
+							    
+							    if (!pattern.matcher(input.toString()).matches()) {
+							      throw new NumberFormatException();
+							    }
+								double valor = Double.parseDouble(input.toString()),conversion=0,cambio=0;
+					            opcionConversion = opcionConversion.replace("De ", "");
+					            opcionConversion = opcionConversion.replace(" a ", ";");
+					            String[] subCadenas = opcionConversion.split(";");
+					            opInicial = subCadenas[0];
+					            opFinal = subCadenas[1];
+					            for (List<String> lista : lstOpciones) {
+					            	if ((opInicial.equals(lista.get(2)) && opFinal.equals(lista.get(3))) ||
+					            		(opInicial.equals(lista.get(3)) && opFinal.equals(lista.get(2)))) {
+										cambio = Double.parseDouble(lista.get(4));
+										break;
+									}
+								}
+					            if(opInicial.equals("Metro")) {
+					            	conversion = valor / cambio;
+					            } else {
+					            	conversion = valor * cambio;
+					            }
+					            
+					            DecimalFormat df = new DecimalFormat("#.##");
+					            
+					            JOptionPane.showMessageDialog(null, "El resultado es "+df.format(conversion)+" "+opFinal+"s", "Resultado", JOptionPane.INFORMATION_MESSAGE);
+					            int respuesta = JOptionPane.showConfirmDialog(null, "¿Desea continuar usando el programa?", "Confirmación", JOptionPane.YES_NO_CANCEL_OPTION);
+					            
+					            if(respuesta == JOptionPane.YES_OPTION) {
+					                System.out.println("El usuario ha decidido continuar usando el programa.");
+					            } else{
+					            	JOptionPane.showMessageDialog(null, "Programa finalizado", "Información", JOptionPane.INFORMATION_MESSAGE);
+					            	System.exit(0);
+					            }
+							}
+							catch(NumberFormatException ex){
+								JOptionPane.showMessageDialog(null, "El valor ingresado no es un número válido.", "Error", JOptionPane.ERROR_MESSAGE);
+							}
+						}     
+					}
 				}
 				else if(opcion == "Conversor de monedas"){
 					List<List<String>> lstOpciones= new ArrayList<>();
