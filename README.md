@@ -1,4 +1,4 @@
-https://img.shields.io/appveyor/build/adrianctor/conversor-monedas-alura-challenge-2
+![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
 
 <h1>Conversor de monedas Alura Challenge 2 ONE-G4</h1>
 
