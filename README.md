@@ -1,3 +1,5 @@
+https://img.shields.io/appveyor/build/adrianctor/conversor-monedas-alura-challenge-2
+
 <h1>Conversor de monedas Alura Challenge 2 ONE-G4</h1>
 
 <h2>Descripcion del proyecto</h2>
@@ -10,7 +12,7 @@ El proyecto también incluye la opción de realizar conversiones históricas, lo
 
 En general, el conversor de monedas es una herramienta útil y práctica para cualquier persona que necesite realizar conversiones de moneda con regularidad. Su interfaz intuitiva y su base de datos actualizada lo convierten en una opción confiable y precisa para los usuarios de todos los niveles de habilidad.
 
-<h2>Requisitos:</h2>
+<h2>Funcionalidades:</h2>
 
 - El convertidor de monedas puede:
 
