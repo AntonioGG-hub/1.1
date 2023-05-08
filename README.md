@@ -2,7 +2,7 @@
 
 <h1>Conversor de monedas Alura Challenge 2 ONE-G4</h1>
 
-<h2>Descripcion del proyecto</h2>
+##<h2>Descripcion del proyecto</h2>
 
 El proyecto es un conversor de monedas desarrollado en Java, que permite a los usuarios convertir entre diferentes tipos de monedas de forma rápida y sencilla. El conversor es capaz de convertir varias monedas populares, como dólares, euros, yenes, libras esterlinas, pesos mexicanos, entre otras.
 
@@ -11,6 +11,10 @@ La interfaz del conversor es intuitiva y fácil de usar, lo que permite a los us
 El proyecto también incluye la opción de realizar conversiones históricas, lo que permite a los usuarios conocer el tipo de cambio de una fecha específica en el pasado. Esto puede ser útil para aquellos que necesitan realizar informes financieros o simplemente quieren hacer un seguimiento del valor de una moneda a lo largo del tiempo.
 
 En general, el conversor de monedas es una herramienta útil y práctica para cualquier persona que necesite realizar conversiones de moneda con regularidad. Su interfaz intuitiva y su base de datos actualizada lo convierten en una opción confiable y precisa para los usuarios de todos los niveles de habilidad.
+
+<h4 align="center">
+##:construction: Proyecto en construcción :construction:
+</h4>
 
 ## :hammer:Funcionalidades del proyecto
 
@@ -30,3 +34,9 @@ En general, el conversor de monedas es una herramienta útil y práctica para cu
        - Convertir de Yen Japonés a Peso colombiano
        - Convertir de Won sul-coreano a Peso colombiano
 
+## :white_check_mark:Tecnologias utilizadas
+       - Java
+       
+## License
+
+       Docusaurus is [MIT licensed](./LICENSE).
