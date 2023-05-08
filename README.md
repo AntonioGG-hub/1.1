@@ -2,7 +2,23 @@
 
 <h1>Conversor de monedas Alura Challenge 2 ONE-G4</h1>
 
-<h2>Descripcion del proyecto</h2>
+##Índice
+
+*[Descripción del proyecto](#descripción-del-proyecto)
+
+*[Estado del proyecto](#Estado-del-proyecto)
+
+*[Características de la aplicación y demostración](#Características-de-la-aplicación-y-demostración)
+
+*[Acceso al proyecto](#acceso-proyecto)
+
+*[Tecnologías utilizadas](#tecnologías-utilizadas)
+
+*[Personas-Desarrolladores del Proyecto](#personas-desarrolladores)
+
+*[Conclusión](#conclusión)
+
+##<h2>Descripcion del proyecto</h2>
 
 El proyecto es un conversor de monedas desarrollado en Java, que permite a los usuarios convertir entre diferentes tipos de monedas de forma rápida y sencilla. El conversor es capaz de convertir varias monedas populares, como dólares, euros, yenes, libras esterlinas, pesos mexicanos, entre otras.
 
