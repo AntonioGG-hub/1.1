@@ -12,7 +12,7 @@ El proyecto también incluye la opción de realizar conversiones históricas, lo
 
 En general, el conversor de monedas es una herramienta útil y práctica para cualquier persona que necesite realizar conversiones de moneda con regularidad. Su interfaz intuitiva y su base de datos actualizada lo convierten en una opción confiable y precisa para los usuarios de todos los niveles de habilidad.
 
-<h2>Funcionalidades:</h2>
+## :hammer:Funcionalidades del proyecto
 
 - El convertidor de monedas puede:
 
