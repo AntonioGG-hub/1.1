@@ -178,9 +178,7 @@ public class Home extends JFrame {
 					            JOptionPane.showMessageDialog(null, "El resultado es "+df.format(conversion)+" "+opFinal+"s", "Resultado", JOptionPane.INFORMATION_MESSAGE);
 					            int respuesta = JOptionPane.showConfirmDialog(null, "¿Desea continuar usando el programa?", "Confirmación", JOptionPane.YES_NO_CANCEL_OPTION);
 					            
-					            if(respuesta == JOptionPane.YES_OPTION) {
-					                System.out.println("El usuario ha decidido continuar usando el programa.");
-					            } else{
+					            if(respuesta == JOptionPane.NO_OPTION) {
 					            	JOptionPane.showMessageDialog(null, "Programa finalizado", "Información", JOptionPane.INFORMATION_MESSAGE);
 					            	System.exit(0);
 					            }
@@ -255,9 +253,7 @@ public class Home extends JFrame {
 					            JOptionPane.showMessageDialog(null, "Tienes $ "+df.format(conversion)+" "+opFinal, "Resultado", JOptionPane.INFORMATION_MESSAGE);
 					            int respuesta = JOptionPane.showConfirmDialog(null, "¿Desea continuar usando el programa?", "Confirmación", JOptionPane.YES_NO_CANCEL_OPTION);
 					            
-					            if(respuesta == JOptionPane.YES_OPTION) {
-					                System.out.println("El usuario ha decidido continuar usando el programa.");
-					            } else{
+					            if(respuesta == JOptionPane.NO_OPTION) {
 					            	JOptionPane.showMessageDialog(null, "Programa finalizado", "Información", JOptionPane.INFORMATION_MESSAGE);
 					            	System.exit(0);
 					            }
