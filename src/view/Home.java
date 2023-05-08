@@ -119,8 +119,9 @@ public class Home extends JFrame {
 				}
 				else if(opcion == "Conversor de monedas"){
 					List<List<String>> lstOpciones= new ArrayList<>();
-					String[] valores = new String[8];
+					String[] valores = new String[10];
 					int indiceValores=0;
+					lstOpciones.add(new ArrayList<String>(Arrays.asList("COP","USD","Peso colombiano", "Dolar estadounidense", "4506.23")));
 					lstOpciones.add(new ArrayList<String>(Arrays.asList("COP","EU","Peso colombiano", "Euro", "4947.14")));
 					lstOpciones.add(new ArrayList<String>(Arrays.asList("COP","GBP","Peso colombiano", "Libra esterlina", "5670.51")));
 					lstOpciones.add(new ArrayList<String>(Arrays.asList("COP","JPY","Peso colombiano", "Yen japonés", "33.31")));
