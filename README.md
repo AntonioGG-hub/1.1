@@ -31,7 +31,7 @@ En general, el conversor de monedas es una herramienta útil y práctica para cu
        - Convertir de Peso colombiano  a Yen Japonés
        - Convertir de Peso colombiano  a Won sul-coreano
        
-       ![cmonedas2](https://user-images.githubusercontent.com/123501294/236914516-00a82280-dace-4109-be66-813f52001cc1.png)
+![cmonedas2](https://user-images.githubusercontent.com/123501294/236914516-00a82280-dace-4109-be66-813f52001cc1.png)
 
 - Recordando que también debe ser posible convertir inversamente, es decir:
 
@@ -41,7 +41,7 @@ En general, el conversor de monedas es una herramienta útil y práctica para cu
        - Convertir de Yen Japonés a Peso colombiano
        - Convertir de Won sul-coreano a Peso colombiano
        
-       ![cunidades](https://user-images.githubusercontent.com/123501294/236914545-3f4692a0-d773-4c26-b2c3-5ae930c17f55.png)
+![cunidades](https://user-images.githubusercontent.com/123501294/236914545-3f4692a0-d773-4c26-b2c3-5ae930c17f55.png)
 
 ## :white_check_mark:Tecnologias utilizadas
        - Java
