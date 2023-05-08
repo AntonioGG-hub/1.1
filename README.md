@@ -1,4 +1,4 @@
-![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
+![Badge en Desarollo](https://img.shields.io/badge/STATUS-DEPLOY-green)
 
 <h1>Conversor de monedas Alura Challenge 2 ONE-G4</h1>
 
